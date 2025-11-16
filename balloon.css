@@ -36,3 +36,41 @@ h1 {
   0% { transform: scale(1); opacity: 1; }
   100% { transform: scale(1.8); opacity: 0; }
 }
+
+.button {
+    position: fixed;         /* Makes it fixed on the screen */
+    bottom: 30px;            /* Distance from the bottom */
+    right: 30px;             /* Distance from the right */
+    width: 150px;
+    height: 60px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 13px;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+    z-index: 999;            /* Stays above other content */
+}
+
+.button_icon {
+   position: relative; /* Allows us to reposition our elements */
+   float: left; /* Moves the image to the left without affecting other elements */
+   width: 25px;
+   height: 25px;
+   left: 50px; /* Moves the image left by 50px */
+   top: 15px;  /* Moves the image down by 15px to align it vertically */
+}
+
+
+.button:hover {
+   background: lightgreen;
+   color: black;
+   outline: 2px solid #304a58;
+}
