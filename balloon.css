@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
   margin: 0;
   height: 100vh;
@@ -5,9 +7,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#a0e0ff, #ffffff);
-  font-family: Arial, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url("images/Balloon-Background.png");
+  background-size: cover;        /* Makes the image cover the entire background */
+  background-repeat: no-repeat;  /* Prevents the image from repeating */
+  background-position: top;      /* Aligns the image at the top */
 }
+
 
 
 h1 {
@@ -16,13 +22,16 @@ h1 {
 
 
 #balloon {
-  width: 120px;
+  width: 110px;
   height: 150px;
-  background: red;
-  border-radius: 50%;
+   background: url("images/Balloon.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+  border-radius: 100%;
   cursor: pointer;
   transition: transform 0.2s ease;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  
 }
 
 

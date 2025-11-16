@@ -10,17 +10,16 @@ p {
 
 /* Optional: apply Josefin Sans globally to body */
 body {
-   font-family: "Josefin Sans", sans-serif;
-   background-image: url("images/Background.jpg");
+  font-family: "Josefin Sans", sans-serif;
+   background-image: url("images/Background.png");
    background-size: cover;        /* Makes the image cover the entire background */
    background-repeat: no-repeat;  /* Prevents the image from repeating */
    background-position: top;      /* Aligns the image at the top */
 }
 
-
 .about {
-   margin-top: 120px; /* Adds spacing above the container */
-   margin-bottom: 40px;
+   margin-top: 60px; /* Adds spacing above the container */
+   margin-bottom: 20px;
 }
 
 
@@ -30,42 +29,49 @@ body {
 
 
 .button {
-   background: white;
-   color: rgb(0, 0, 0); /* text colour */
-   display: block; /* Makes each button on its own line */
-   height: 60px;
-   width: 400px;
-   border-radius: 20px;
-   margin: 20px auto; /* Adds spacing to the button and centers it */
-   text-decoration: none; /* Removes underline from hyperlink */
+   background: url("images/Cloud-Button.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   color: rgb(0, 0, 0);
+   display: block;
+   height: 110px;
+   width: 350px;
+   margin: 20px auto;
+   text-decoration: none;
    text-align: center;
-   font-weight: bold; /* Bolds the text */
-   line-height: 60px; /* Vertically aligns the text */
+   font-weight: bold;
+   line-height: 60px;
    font-size: 20px;
-   font-family: "Josefin Sans", sans-serif; /* Apply font to buttons */
+   font-family: "Josefin Sans", sans-serif;
+}
+
+.button:hover {
+   background: url("images/Cloud-Hover.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
 
 .button_icon {
    position: relative; /* Allows us to reposition our elements */
    float: left; /* Moves the image to the left without affecting other elements */
-   width: 25px;
-   height: 25px;
-   left: 50px; /* Moves the image left by 50px */
-   top: 15px;  /* Moves the image down by 15px to align it vertically */
+   width: 45px;
+   height: 45px;
+   left: 40px; /* Moves the image left by 50px */
+   top: 32px;  /* Moves the image down by 15px to align it vertically */
 }
-
-
-.button:hover {
-   background: lightgreen;
-   color: black;
-   outline: 2px solid #304a58;
-}
-
 
 .description {
    text-align: center;
 }
 
+.button_text {
+   position: relative; /* Allows us to reposition our elements */
+   float: left; /* Moves the image to the left without affecting other elements */
+   left: 50px; /* Moves the image left by 50px */
+   top: 25px;  /* Moves the image down by 15px to align it vertically */
+}
 
 
