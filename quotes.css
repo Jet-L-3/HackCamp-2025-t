@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('your-background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+/* Fade effect for the quote text */
+#quote {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+
+button {
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: #555;
+  color: white;
+}
+

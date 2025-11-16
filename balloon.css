@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#a0e0ff, #ffffff);
+  font-family: Arial, sans-serif;
+}
+
+
+h1 {
+  margin-bottom: 30px;
+}
+
+
+#balloon {
+  width: 120px;
+  height: 150px;
+  background: red;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+/* When balloon pops */
+.pop {
+  animation: pop-animation 0.3s ease forwards;
+}
+
+
+@keyframes pop-animation {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
