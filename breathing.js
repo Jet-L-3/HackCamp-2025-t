@@ -31,8 +31,8 @@ function countdown(duration, label, onTick, onComplete) {
 function breatheIn() {
     prompt.textContent = `Breathe in... ${breatheInDuration}`;
     setCircleSize(bigSize);
-    countdown(breatheInDuration, 'Breathe in', ((5 * time / 3)) => {
-        prompt.textContent = `Breathe in... ${(5 * time / 3)}`;
+    countdown(breatheInDuration, 'Breathe in', (time) => {
+        prompt.textContent = `Breathe in... ${time}`;
     }, breatheOut);
 }
 
